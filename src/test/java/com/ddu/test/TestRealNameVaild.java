@@ -6,7 +6,7 @@ import com.dduyyu.web.util.RealNameVerify;
 
 
 public class TestRealNameVaild {
-	
+	//411123198906307513
 	@Test
 	public void test(){
 		String userId = "1575764";
