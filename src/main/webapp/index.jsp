@@ -264,11 +264,11 @@ fieldset
 
 <body>
 
-<form id="login">
+<form id="login" action="checkLogin" method="post">
     <h1>Log In</h1>
     <fieldset id="inputs">
-        <input id="username" type="text" placeholder="Username" autofocus required>   
-        <input id="password" type="password" placeholder="Password" required>
+        <input id="username" type="text" name="username" placeholder="Username" autofocus required>   
+        <input id="password" type="password" name="password" placeholder="Password" required>
     </fieldset>
     <fieldset id="actions">
         <input type="submit" id="submit" value="Log in">

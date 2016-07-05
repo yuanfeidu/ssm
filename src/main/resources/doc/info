@@ -1,2 +1,2 @@
 //把三方jar放到mvn仓库
-eg：install:install-file -Dfile=C:/Users/yuanfei/Documents/ThirdParty/WebRoot/WEB-INF/lib/BestSignSDK-java-1.3.2.jar -DgroupId=BestSignSDK -DartifactId=BestSignSDK-java-1.3.2 -Dversion=1.0 -Dpackaging=jar 
+eg：install:install-file -Dfile=C:\Users\ddu\git\ssm\src\main\resources\jar\BestSignSDK-java-1.3.2.jar -DgroupId=BestSignSDK -DartifactId=BestSignSDK-java-1.3.2 -Dversion=1.0 -Dpackaging=jar 
