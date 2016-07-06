@@ -1,0 +1,14 @@
+[{
+	"id":1,
+	"text":"操作人员",
+	"state":"closed",
+	"children":[{
+		"id":11,
+		"text":"ddu"
+	},
+	{
+		"id":12,
+		"text":"yyu"
+	}
+	]
+}]
