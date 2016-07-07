@@ -12,7 +12,7 @@
 <title>首页</title>
 </head>
 <body>
-	<div class="easyui-panel" style="width: 100%;height: 700px;padding: 5px" title="preview">
+	<div class="easyui-panel" style="width: 100%;height: 700px;" title="preview">
 		<div class="easyui-layout" data-options="fit:true">
 			<div data-options="region:'north'" style="height: 100px"></div> 
 			<div data-options="region:'south'" style="height: 80px"></div>
@@ -21,7 +21,7 @@
 				<!-- add accordion -->
 				<div class="easyui-accordion" data-options="fit:true,border:false">
 					<div title="菜单1" data-options="selected:true">
-						<ul class="easyui-tree " data-options="url:'tree1.json',method:'get',animate:true"></ul>
+						<ul class="easyui-tree " data-options="url:'easyui/tree1.json',method:'get',animate:true"></ul>
 					</div>
 					<div title="菜单2">菜单2</div>
 					<div title="菜单3">菜单3</div>
@@ -32,7 +32,7 @@
 				<div class="easyui-tabs" data-options="fit:true,border:false,plain:true">
 					<div title="about" style="padding: 10px">欢迎 ${username}!</div>
 					<div title="DataGrid" style="padding:5px">
-						<table class="easyui-datagrid" data-options="url:'ttt.json',method:'get',singleSelect:true,fit:true,fitColumns:true">
+						<table class="easyui-datagrid" data-options="url:'easyui/ttt.json',method:'get',singleSelect:true,fit:true,fitColumns:true">
 							<thead>
 								<tr>
 									<th data-options="field:'id'" width="80">id</th>
