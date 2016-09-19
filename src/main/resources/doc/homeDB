@@ -1,0 +1,31 @@
+CREATE TABLE `t_user` (
+`id`  int NOT NULL AUTO_INCREMENT ,
+`username`  varchar(50) NULL ,
+`password`  varchar(64) NULL ,
+`email`  varchar(50) NULL ,
+`mobile`  varchar(32) NOT NULL ,
+`lastest_login_ip`  varchar(32) NULL COMMENT '最近登录ip' ,
+`lastest_login_date`  timestamp NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '最后登录时间' ,
+`status`  varchar(10) NULL COMMENT '状态是否可用 ',
+`login_status`  varchar(50) NULL COMMENT '登录状态' ,
+PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `t_cost` (
+`id`  int NOT NULL AUTO_INCREMENT,
+`cost`  decimal NOT NULL COMMENT '花费' ,
+`create_date`  timestamp NULL ON UPDATE CURRENT_TIMESTAMP ,
+`update_date`  timestamp NULL ON UPDATE CURRENT_TIMESTAMP ,
+`user_id`  int NOT NULL COMMENT '花费人员' ,
+`category_id`  int NOT NULL COMMENT '花费项目类别' ,
+PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `t_category` (
+`id`  int NOT NULL AUTO_INCREMENT ,
+`category_name`  varchar(50) NULL COMMENT '花费条目' ,
+`status`  varchar(10) NULL ,
+`create_date`  datetime NULL ,
+`update_date`  datetime NULL ,
+PRIMARY KEY (`id`)
+);

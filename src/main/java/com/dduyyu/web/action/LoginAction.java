@@ -25,7 +25,7 @@ public class LoginAction {
 		user.setUserName(userName);
 		user.setPassword(passWord);
 		
-//		user = loginService.checkLogin(user);
+		user = loginService.checkLogin(user);
 		
 		if(user != null){
 			model.addAttribute("username", userName);

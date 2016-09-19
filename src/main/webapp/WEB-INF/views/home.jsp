@@ -16,7 +16,6 @@
 		<div class="easyui-layout" data-options="fit:true">
 			<div data-options="region:'north'" style="height: 100px"></div> 
 			<div data-options="region:'south'" style="height: 80px"></div>
-			<!-- <div data-options="region:'east',title:'东部',split:true" style="width: 100px"></div> -->
 			<div data-options="region:'west',title:'主菜单'" style="width: 200px">
 				<!-- add accordion -->
 				<div class="easyui-accordion" data-options="fit:true,border:false">
