@@ -1,4 +1,4 @@
-package com.dduyyu.dao;
+package com.dduyyu.mapper;
 
 import com.dduyyu.entity.User;
 

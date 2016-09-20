@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.dduyyu.web.entity.User;
+import com.dduyyu.entity.User;
 import com.dduyyu.web.service.LoginService;
 
 @Controller
@@ -22,7 +22,7 @@ public class LoginAction {
 		String passWord = request.getParameter("password");
 		
 		User user = new User();
-		user.setUserName(userName);
+//		user.setUserName(userName);
 		user.setPassword(passWord);
 		
 		user = loginService.checkLogin(user);
